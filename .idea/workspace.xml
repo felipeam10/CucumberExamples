@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d68d6adb-089c-4fb9-9bd7-27cc5eaa1ed6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Adicao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Divisao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Multiplicacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Operacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora/src/calculadora/Subtracao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWordComKotlin/src/main/kotlin/firstProgram.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RobotFramework/robotFramework2/for.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RobotFramework/robotFramework2/teardowns.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Aleatorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/ArrayEx03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/ArrayEx04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/ArrayEx05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/AutorizaAcesso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/BrincandoComDatas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/ComparadorConta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/CuponDesconto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Listagem06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Listagem07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Listagem08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Matrizes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Matrizes01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Matrizes02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Matrizes03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Programa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Signo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/TiposDeDadosSimples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/Adicao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/Divisao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/Multiplicacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/Operacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/Subtracao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestesDiversos/src/calculadora/TiposDeDadosEstruturados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helloWord2/src/main/java/com/felipe/helloWord2/helloWord2/HelloWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jogos/adivinhacao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/src/main/java/br/com/felipe/cursosspring/Programa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/src/main/java/br/com/felipe/cursosspring/application/ProgramaLembreteEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/src/main/java/br/com/felipe/cursosspring/domain/Mailer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/src/main/java/br/com/felipe/cursosspring/domain/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/src/main/java/br/com/felipe/cursosspring/domain/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailer/src/main/java/br/com/felipe/cursosspring/service/UsuarioServico.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Buzw5Jd1uy6FpGuiahFzK6jqOX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/br/mg/paodequeijo/servicos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.15865384" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.mg.paodequeijo.entidades" />
+      <recent name="br.mg.paodequeijo.servicos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\workspace-projects\CucumberExamples2\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\workspace-projects\CucumberExamples2\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Runner">
+    <configuration name="HelloWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWord" />
+      <module name="CucumberExamples" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="CucumberExamples" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: firstFeature (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/firstFeature.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CucumberExamples" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: firstFeature" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: firstFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/firstFeature.feature" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.cli.Main" />
+      <module name="CucumberExamples" />
+      <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: firstFeature" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CucumberExamples" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: firstFeature (1)" />
+        <item itemvalue="Cucumber Java.Feature: firstFeature" />
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.HelloWord" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d68d6adb-089c-4fb9-9bd7-27cc5eaa1ed6" name="Changes" comment="" />
+      <created>1657770992640</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657770992640</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
