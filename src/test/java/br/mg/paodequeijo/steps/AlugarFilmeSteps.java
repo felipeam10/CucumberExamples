@@ -3,11 +3,15 @@ package br.mg.paodequeijo.steps;
 import br.mg.paodequeijo.entidades.Filme;
 import br.mg.paodequeijo.entidades.NotaAluguel;
 import br.mg.paodequeijo.servicos.AluguelService;
+import br.mg.paodequeijo.utils.DateUtils;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -17,6 +21,7 @@ public class AlugarFilmeSteps {
     private AluguelService aluguel = new AluguelService();
     private NotaAluguel nota;
     private String erro;
+    private String tipoAluguel;
 
     @Given("um filme com estoque de {int} unidades")
     public void umFilmeComEstoqueDeUnidades(int int1) throws Throwable {
@@ -32,7 +37,7 @@ public class AlugarFilmeSteps {
     @When("alugar")
     public void alugar() throws Throwable {
         try {
-            nota = aluguel.alugar(filme);
+            nota = aluguel.alugar(filme, tipoAluguel);
         } catch (RuntimeException e) {
             erro = e.getMessage();
         }
@@ -44,20 +49,6 @@ public class AlugarFilmeSteps {
 
     }
 
-    @Then("a data entrega sera no dia seguinte")
-    public void aDataEntregaSeraNoDiaSeguinte() throws Throwable {
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_MONTH, 1);
-
-        Date dataRetorno = nota.getDataEntyega();
-        Calendar calRetorno = Calendar.getInstance();
-        calRetorno.setTime(dataRetorno);
-
-        Assert.assertEquals(calendar.get(Calendar.DAY_OF_MONTH), calRetorno.get(Calendar.DAY_OF_MONTH));
-        Assert.assertEquals(calendar.get(Calendar.MONTH), calRetorno.get(Calendar.MONTH));
-        Assert.assertEquals(calendar.get(Calendar.YEAR), calRetorno.get(Calendar.YEAR));
-    }
-
     @Then("o estoque do filme sera {int} unidade")
     public void oEstoqueDoFilmeSeraUnidade(int int1) throws Throwable {
         Assert.assertEquals(int1, filme.getEstoque());
@@ -66,5 +57,30 @@ public class AlugarFilmeSteps {
     @Then("nao sera possivel por falta de estoque")
     public void naoSeraPossivelPorFaltaDeEstoque() throws Throwable {
         Assert.assertEquals("Filme sem estoque", erro);
+    }
+
+    @Given("^o tipo de aluguel seja (.*)$")
+    public void o_tipo_de_aluguel_seja_extendido(String tipo) throws Throwable {
+        tipoAluguel = tipo;
+    }
+
+    @Then("^a data de entrega sera em (\\d+) dias?$")
+    public void a_data_de_entrega_sera_em_dias(int int1) throws Throwable {
+        Date dataEsperada = DateUtils.obterDataComDiferencaDeDias(int1);
+        Date dataReal = nota.getDataEntrega();
+
+        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+
+        Assert.assertEquals(format.format(dataEsperada), format.format(dataReal));
+    }
+
+    @Then("a pontuacao recebida sera de {int} pontos")
+    public void a_pontuacao_recebida_sera_de_pontos(int int1) throws Throwable {
+        Assert.assertEquals(int1, nota.getPontuacao());
+    }
+
+    @And("o preco de aluguel seja R$ {int}")
+    public void oPrecoDeAluguelSejaR$(int int1) {
+        filme.setAluguel(int1);
     }
 }
