@@ -2,6 +2,7 @@ package br.mg.paodequeijo.steps;
 
 import br.mg.paodequeijo.entidades.Filme;
 import br.mg.paodequeijo.entidades.NotaAluguel;
+import br.mg.paodequeijo.entidades.TipoAluguel;
 import br.mg.paodequeijo.servicos.AluguelService;
 import br.mg.paodequeijo.utils.DateUtils;
 import io.cucumber.java.en.And;
@@ -21,7 +22,7 @@ public class AlugarFilmeSteps {
     private AluguelService aluguel = new AluguelService();
     private NotaAluguel nota;
     private String erro;
-    private String tipoAluguel;
+    private TipoAluguel tipoAluguel = TipoAluguel.COMUM;
 
     @Given("um filme com estoque de {int} unidades")
     public void umFilmeComEstoqueDeUnidades(int int1) throws Throwable {
@@ -61,7 +62,7 @@ public class AlugarFilmeSteps {
 
     @Given("^o tipo de aluguel seja (.*)$")
     public void o_tipo_de_aluguel_seja_extendido(String tipo) throws Throwable {
-        tipoAluguel = tipo;
+        tipoAluguel = tipo.equals("semanal") ? TipoAluguel.SEMANAL : tipo.equals("extendido") ? TipoAluguel.EXTENDIDO : TipoAluguel.COMUM;
     }
 
     @Then("^a data de entrega sera em (\\d+) dias?$")
