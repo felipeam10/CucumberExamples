@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         glue = "br.mg.paodequeijo.steps",
-        plugin = "pretty",
+        plugin = {"pretty", "html:target/cucumber.html"},
         monochrome = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         dryRun = true
