@@ -5,6 +5,7 @@ import br.mg.paodequeijo.entidades.NotaAluguel;
 import br.mg.paodequeijo.entidades.TipoAluguel;
 import br.mg.paodequeijo.servicos.AluguelService;
 import br.mg.paodequeijo.utils.DateUtils;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,6 +16,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Map;
 
 public class AlugarFilmeSteps {
 
@@ -22,7 +24,7 @@ public class AlugarFilmeSteps {
     private AluguelService aluguel = new AluguelService();
     private NotaAluguel nota;
     private String erro;
-    private TipoAluguel tipoAluguel = TipoAluguel.COMUM;
+    private TipoAluguel tipoAluguel;
 
     @Given("um filme com estoque de {int} unidades")
     public void umFilmeComEstoqueDeUnidades(int int1) throws Throwable {
@@ -33,6 +35,16 @@ public class AlugarFilmeSteps {
     @Given("que o preco do aluguel seja R$ {int}")
     public void queOPrecoDoAluguelSejaR$(int int1) throws Throwable {
         filme.setAluguel(int1);
+    }
+
+    @Given("um filme")
+    public void umFilme(DataTable table) throws Throwable{
+        Map<String, String> map = table.asMap(String.class, String.class);
+        filme = new Filme();
+        filme.setEstoque(Integer.parseInt(map.get("estoque")));
+        filme.setAluguel(Integer.parseInt(map.get("preco")));
+        String tipo = map.get("tipo");
+        tipoAluguel = tipo.equals("semanal") ? TipoAluguel.SEMANAL : tipo.equals("extendido") ? TipoAluguel.EXTENDIDO : TipoAluguel.COMUM;
     }
 
     @When("alugar")
