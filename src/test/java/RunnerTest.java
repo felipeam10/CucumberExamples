@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         tags = "not @ignore",
         plugin = {"pretty", "html:target/cucumber.html"},
         monochrome = false,
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        dryRun = false
     )
 public class RunnerTest {
 
