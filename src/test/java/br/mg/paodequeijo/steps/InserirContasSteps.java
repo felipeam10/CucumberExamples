@@ -67,5 +67,10 @@ public class InserirContasSteps {
     public void souNotificadoQueONomeDaContaEhObrigatorio() {
         driver.findElement(By.xpath("//div[@class='alert alert-danger'][contains(.,'Informe o nome da conta')]"));
     }
-    
+
+    @Then("sou notificado que ja existe uma conta com esse nome")
+    public void souNotificadoQueJaExisteUmaContaComEsseNome() {
+        driver.findElement(By.xpath("//div[@class='alert alert-danger'][contains(.,'Já existe uma conta com esse nome!')]"));
+    }
+
 }
