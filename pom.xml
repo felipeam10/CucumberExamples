@@ -18,15 +18,17 @@
             <artifactId>cucumber-java</artifactId>
             <version>7.4.1</version>
         </dependency>
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.4.1</version>
             <scope>test</scope>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.14.0</version>
+        </dependency>
     </dependencies>
 
 </project>
