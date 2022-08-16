@@ -16,7 +16,7 @@ Feature: Cadastro de contas
     And seleciono Salvar
     When a conta eh inserida com sucesso
 
-  @ignore
+  #@ignore
   Scenario: Nao deve inserir uma conta sem nome
     Given que estou acessando a aplicacao
     When informo o usuario "felipeam10@hotmail.com"
@@ -39,4 +39,4 @@ Feature: Cadastro de contas
     And seleciono Adicionar
     And informo a conta "Conta de Teste"
     And seleciono Salvar
-    Then sou notificado que ja existe uma conta com esse nome 
+    Then sou notificado que ja existe uma conta com esse nome

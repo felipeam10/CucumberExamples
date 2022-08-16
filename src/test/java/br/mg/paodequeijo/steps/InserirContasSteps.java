@@ -1,5 +1,6 @@
 package br.mg.paodequeijo.steps;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -71,6 +72,11 @@ public class InserirContasSteps {
     @Then("sou notificado que ja existe uma conta com esse nome")
     public void souNotificadoQueJaExisteUmaContaComEsseNome() {
         driver.findElement(By.xpath("//div[@class='alert alert-danger'][contains(.,'Já existe uma conta com esse nome!')]"));
+    }
+
+    @After
+    public void fecharBrowser() {
+        driver.quit();
     }
 
 }
