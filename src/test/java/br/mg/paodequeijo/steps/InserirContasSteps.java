@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -72,6 +73,12 @@ public class InserirContasSteps {
     @Then("sou notificado que ja existe uma conta com esse nome")
     public void souNotificadoQueJaExisteUmaContaComEsseNome() {
         driver.findElement(By.xpath("//div[@class='alert alert-danger'][contains(.,'Já existe uma conta com esse nome!')]"));
+    }
+
+    @Then("recebo a mensagem {string}")
+    public void receboAMensagem(String string)throws Throwable {
+        String texto = driver.findElement(By.xpath("//div[contains(@role,'alert')]")).getText();
+        Assert.assertEquals(string, texto);
     }
 
     @After

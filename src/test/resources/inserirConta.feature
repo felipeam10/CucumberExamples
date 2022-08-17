@@ -12,19 +12,32 @@ Feature: Cadastro de contas
     When seleciono Contas
     And seleciono Adicionar
 
-  #@ignore
-  Scenario: Deve inserir uma conta com sucesso
-    And informo a conta "Conta de Teste"
-    And seleciono Salvar
-    When a conta eh inserida com sucesso
 
-  #@ignore
-  Scenario: Nao deve inserir uma conta sem nome
+  Scenario Outline: Deve validar regras cadastro contas
+    When informo a conta "<conta>"
     And seleciono Salvar
-    Then sou notificado que o nome da conta eh obrigatorio
+    Then recebo a mensagem "<mensagem>"
 
-  #@ignore
-  Scenario: Nao deve inserir uma conta com nome ja existente
-    And informo a conta "Conta de Teste"
-    And seleciono Salvar
-    Then sou notificado que ja existe uma conta com esse nome
+  Examples:
+    | conta             | mensagem                            |
+    | Conta de Teste    | Conta adicionada com sucesso!       |
+    |                   | Informe o nome da conta             |
+    | Conta mesmo nome  | Já existe uma conta com esse nome!  |
+
+
+#  #@ignore
+#  Scenario: Deve inserir uma conta com sucesso
+#    And informo a conta "Conta de Teste"
+#    And seleciono Salvar
+#    When a conta eh inserida com sucesso
+#
+#  #@ignore
+#  Scenario: Nao deve inserir uma conta sem nome
+#    And seleciono Salvar
+#    Then sou notificado que o nome da conta eh obrigatorio
+#
+#  #@ignore
+#  Scenario: Nao deve inserir uma conta com nome ja existente
+#    And informo a conta "Conta de Teste"
+#    And seleciono Salvar
+#    Then sou notificado que ja existe uma conta com esse nome
