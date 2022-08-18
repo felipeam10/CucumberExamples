@@ -1,13 +1,21 @@
 package br.mg.paodequeijo.steps;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 public class InserirContasSteps {
 
@@ -81,7 +89,23 @@ public class InserirContasSteps {
         Assert.assertEquals(string, texto);
     }
 
-    @After
+    @Before(order = 10)
+    public void inicio() {
+        System.out.println("começando aqui");
+    }
+
+    @Before(order = 0) // no before eh o primeiro a ser executado
+    public void inicio2() {
+        System.out.println("começando aqui, parte 2");
+    }
+
+    @After(order = 1)
+    public void screenshot(Scenario cenario) throws IOException {
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file, new File(new File("target/screenshot/" + cenario.getId()) + ".jpg"));
+    }
+
+    @After(order = 0) //order 0 eh o ultimo a ser executado
     public void fecharBrowser() {
         driver.quit();
     }
