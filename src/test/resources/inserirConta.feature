@@ -1,3 +1,4 @@
+@funcionais
 Feature: Cadastro de contas
   Como um usuario
   Gostaria de cadastrar contas

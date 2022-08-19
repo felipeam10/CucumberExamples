@@ -99,13 +99,13 @@ public class InserirContasSteps {
         System.out.println("começando aqui, parte 2");
     }
 
-    @After(order = 1)
+    @After(order = 1, value = "@funcionais")
     public void screenshot(Scenario cenario) throws IOException {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File(new File("target/screenshot/" + cenario.getId()) + ".jpg"));
     }
 
-    @After(order = 0) //order 0 eh o ultimo a ser executado
+    @After(order = 0, value = "@funcionais") //order 0 eh o ultimo a ser executado
     public void fecharBrowser() {
         driver.quit();
     }
