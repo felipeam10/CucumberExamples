@@ -8,15 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/inserirConta.feature",
+        features = "src/test/resources/",
         glue = "br.mg.paodequeijo.steps",
-        tags = "not @ignore",
+        tags = "@funcionais",
         plugin = {"pretty", "html:target/cucumber.html"},
         monochrome = false,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         dryRun = false
     )
-public class RunnerTest {
+public class RunnerFuncionalTest {
 
     @BeforeClass
     public static void reset(){
